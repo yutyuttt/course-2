@@ -1,0 +1,53 @@
+* Simple vending machine application for practicing MVC
+** The purpose of this repository
+   This repository contains the bare bones of an application for
+   practicing model-view-controller (MVC) architecture.
+
+** Installation in VS Code
+   To install the application in VS Code do the following:
+   1. Clone the repository.
+   2. Open file =name_registry_app.py=.
+   3. Run file.
+   Make changes to the project and run it again.
+
+** Alternative installation from command line
+   1. Clone repository.
+   2. Run app with
+      #+begin_src sh
+        python main.py
+      #+end_src
+** Python =Enum=
+   In this application, data type =Product= is a Python =Enum=, which
+   allows you to create a data type with a finite number of possible
+   values (\ldquo{}subtypes\rdquo). In this case, the possible values
+   of =Product= are initially =Beverage= and =Apple=. Thus, you can
+   set, for example
+   #+begin_src python :exports code
+     product = Product.Apple
+   #+end_src
+   or evaluate an expression such as
+   #+begin_src python :exports code
+     if product == Product.Apple:
+   #+end_src
+   Furthermore, data type created with =Enum= has similar properties
+   as a class in the sense that it can have attributes methods. For
+   example, =Product= has a private attribute =price_cents=, an
+   associated accessor method, and an initializer =__init__()= which
+   sets the price of a product. When identifier =Apple= is declared
+   inside =Product= its price is set (take a look at the file).
+
+** License
+   Copyright (C) 2025 Jarmo Hurri
+
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program.  If not, see <https://www.gnu.org/licenses/>.
