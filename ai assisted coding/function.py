@@ -5,11 +5,11 @@ def two_largest(lst):
 
     first = second = None
 
-    for number in lst:
-        if first is None or number >= first:
+    for value in lst:
+        if first is None or value >= first:
             second = first
-            first = number
-        elif second is None or number > second:
-            second = number
+            first = value
+        elif second is None or value > second:
+            second = value
 
     return (first, second)
