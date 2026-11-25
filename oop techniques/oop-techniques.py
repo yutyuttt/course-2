@@ -19,7 +19,7 @@ class Order:
     def add_order(self, product): self.products.append(product)
 
     def __str__(self):
-        " ".join([str(p) for p in self.products])
+        return " ".join([str(p) for p in self.products])
 
 class Warehouse:
     def __init__(self, laptops, routers):
